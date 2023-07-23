@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: darkkhaki;
+        }
+        .button{
+            background-color: white;
+            height: 50px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        .button:hover{
+            animation: color 1.5s forwards;
+        }
+        @keyframes color {
+            from {
+                background-color: white;
+            }
+            20% {
+                background-color: green;
+            }
+            40% {
+                background-color: white;
+            }
+            60% {
+                background-color: green;
+            }
+            80% {
+                background-color: white;
+            }
+            to {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='button'></div>
+</body>
+</html>
