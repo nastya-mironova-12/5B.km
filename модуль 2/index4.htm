@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цитаты</title>
+    <style>
+        .knopka_1 {
+            background: paleturquoise;
+            padding: 10px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            user-select: none;
+        }
+        .knopka_2 p{
+            background: palegoldenrod;
+            padding: 10px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            user-select: none;
+        }
+    </style>
+</head>
+<body >
+    <div class="knopka_1" onclick="knpk();">Работает?</div>
+    <div class="knopka_2" ><p onclick="knopka();">Хм…</p></div>
+    <script>
+        function knpk() {
+            alert('Работает. Не трогай!')
+        }
+        function knopka() {
+            var list = ['Чем дольше будешь ждать, тем больше дней ты потеряешь навсегда.','… Даже если время не лечит, с болью примиряешься.','Виноваты, конечно, всегда другие…'];
+            var i;
+            for (i=0; i<3; i++){
+                alert(list[i]);
+            }
+        }
+    </script>
+</body>
+</html>
